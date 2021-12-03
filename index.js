@@ -1,9 +1,28 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+    for(i = 0 ; i < word.length *.2; i++) {      
+      if(word[i] === word[word.length - 1 -i]){
+        return true
+      } else{
+        return false
+      }
+  } 
 }
 
 /* 
   Add your pseudocode here
+  take in a word
+  look at the length of the word
+  if the length is even
+    compare the first letter to the last letter.
+      if same, compare the second letter to second from last letter
+      if different, return false 
+        if same, continue until the Nth letter = .5 word length
+  if the length is odd
+      compare the first letter to the last letter.
+      if same, compare the second letter to second from last letter
+      if different, return false 
+        if same, continue until the Nth letter = .5 (word length - 1), then stop
+
 */
 
 /*
